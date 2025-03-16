@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 100px;
+    gap: 70px;
+}
+
+#left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+#left h1{
+    font-size: 5.5vw;
+    font-weight: 500;
+    line-height: 6.5vw;
+}
+#bottom-left {
+    width: 100%;
+}
+#color{
+    width: fit-content;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+
+}
+#color h5{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+#color1{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(19, 49, 19);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#color2{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(183, 123, 33);
+    border-radius: 50%;
+}
+
+#left h2 {
+    margin-top: 35px;
+    font-size: 2.2vw;
+    margin-bottom: 10px;
+}
+#left p {
+    font-size: 1vw;
+    width: 75%;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.5vw;
+}
+#right {
+    height: 90%;
+    width: 35%;
+    position: relative;
+}
+#right-top {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+
+}
+#right-top h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#right- h5 {
+    font-size: 10px;
+    font-weight: 500;
+}
+#right-top h5 i {
+    color: goldenrod;
+}
+#right img {
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+}
+
+#black-ring {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border-radius: 50%;
+    right: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+}
+#black-ring h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#rotated {
+    position: absolute;
+    left: -10%;
+    bottom: 1%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+@media (max-width:600px) {
+    #main {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    #left {
+        height: fit-content;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }
+    
+    #left h1{
+        font-size: 15vw;
+        line-height: 18vw;
+    }
+    #bottom-left {
+        width: 100%;
+    }
+    #color{
+        width: fit-content;
+        padding: 5px 10px;
+    
+    }
+    #color h5{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #color1{
+        height: 15px;
+        width: 15px;
+        margin: 1px;
+    }
+    
+    #color2{
+        height: 15px;
+        width: 15px;
+    }
+    
+    #left h2 {
+        margin-top: 20px;
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+    #left p {
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+    }
+    #right {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #right-top {
+        padding-right: 0;
+    
+    }
+    #right-top h4 {
+        font-size: 15px;
+    }
+    #right- h5 {
+        font-size:12px;
+    }
+    #right img {
+        width: 100%;
+        height:90%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    #black-ring {
+        height: 100px;
+        width: 100px;
+        right: -10%;
+        top: -10%;
+        
+    }
+    #black-ring h5 {
+        font-size: 15px;
+    }
+    #rotated {
+        left: 0;
+        top: -7%;
+        rotate: 0deg;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    
+    
+}
